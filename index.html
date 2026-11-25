@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Basketball Stats</title>
+  <meta name="theme-color" content="#14161a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🏀 Stats</div>
+    <nav>
+      <button data-act="nav" data-v="roster">Kader</button>
+      <button data-act="nav" data-v="game">Spiel</button>
+      <button data-act="nav" data-v="history">Spiele</button>
+    </nav>
+  </header>
+  <main id="app"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
