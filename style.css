@@ -82,17 +82,18 @@ button.stop { background: var(--miss); border-color: var(--miss); font-weight: 7
 .oppbtns button { padding: 6px 8px; font-size: .85rem; }
 
 /* Player cards */
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 6px; }
 .pcard {
   position: relative; background: var(--panel); border: 2px solid var(--line); border-radius: var(--radius);
-  padding: 10px; cursor: pointer; user-select: none; display: flex; flex-direction: column; gap: 2px;
+  padding: 6px 8px; cursor: pointer; user-select: none; display: flex; flex-direction: column; gap: 1px; min-width: 0;
 }
 .pcard.on { border-color: #5a4630; background: #2a2219; }
 .pcard.sel { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(242,140,40,.35); }
-.pnum { font-size: 1.3rem; font-weight: 800; }
-.pname { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.pline { font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-.pcard .sub { margin-top: 6px; padding: 6px; font-size: .85rem; }
+.ptop { display: flex; align-items: baseline; gap: 6px; min-width: 0; }
+.pnum { font-size: 1rem; font-weight: 800; flex: none; }
+.pname { font-weight: 600; font-size: .9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pline { font-size: .75rem; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pcard .sub { margin-top: 4px; padding: 4px; font-size: .75rem; border-radius: 8px; }
 .pcard.on .sub { border-color: #5a4630; }
 .oncount.warn { color: #ff8a80; }
 
@@ -140,5 +141,5 @@ tr.total td { font-weight: 800; background: var(--panel); }
 @media (max-width: 480px) {
   .sc { font-size: 2.1rem; }
   #clock { font-size: 1.3rem; }
-  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid { grid-template-columns: repeat(3, 1fr); }
 }

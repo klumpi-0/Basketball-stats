@@ -1,5 +1,5 @@
 // Offline-Unterstützung: erst Netzwerk, bei fehlender Verbindung aus dem Cache.
-const CACHE = 'bbstats-v1';
+const CACHE = 'bbstats-v2';
 const FILES = ['./', 'index.html', 'style.css', 'app.js', 'manifest.json', 'icon.svg'];
 
 self.addEventListener('install', (e) => {

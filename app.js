@@ -167,8 +167,7 @@ function viewRoster() {
 
 function card(g, p, st, on) {
   return `<div class="pcard ${on ? 'on' : ''} ${sel === p.id ? 'sel' : ''}" data-act="sel" data-id="${p.id}">
-    <div class="pnum">#${esc(p.num)}</div>
-    <div class="pname">${esc(p.name)}</div>
+    <div class="ptop"><span class="pnum">#${esc(p.num)}</span><span class="pname">${esc(p.name)}</span></div>
     <div class="pline">${st.pts} Pkt · <span data-time="${p.id}">${fmt(g.time[p.id])}</span></div>
     <button class="sub" data-act="sub" data-id="${p.id}">${on ? '↓ Bank' : '↑ Feld'}</button>
   </div>`;
